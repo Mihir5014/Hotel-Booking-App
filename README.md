@@ -1,12 +1,63 @@
-# React + Vite
+# 🧳 Travel Booking React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and interactive multi-step travel booking web application built with React, Redux Toolkit, React Router v6, Formik, and more. Users can search for hotels, view room options, and complete a multi-step booking process.
 
-Currently, two official plugins are available:
+## 🌟 Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Demonstrate key React concepts including:
 
-## Expanding the ESLint configuration
+- Routing with React Router v6
+- State management using Redux Toolkit & Context API
+- Multi-step forms with Formik & Yup
+- Clean, responsive UI/UX
+- Performance optimization and form validation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Features
+
+### 🔍 Search
+- Autocomplete city search input
+- Dynamic route: `/search/:city`
+- Query parameters to filter results: `/search/mumbai?bedType=double&guests=2`
+
+### 🏨 Hotel Listings
+- View available hotels for a selected city
+- See room types and pricing details
+
+### 📝 Multi-Step Booking Form
+- Dynamic route: `/booking/:hotelId`
+- Step 1: Personal Details
+- Step 2: Room Selection
+- Step 3: Payment Info (mocked)
+- Custom stepper navigation
+- Form validation with Formik + Yup
+
+### 📦 State Management
+- Redux Toolkit for managing booking data (selected city, hotel, room, guest info)
+- Async thunk for fetching hotel data
+- State persistence via `localStorage`
+- Context API for theme switching (light/dark mode)
+
+### 🖥 UI/UX Design
+- Responsive design (mobile/tablet/desktop)
+- Clean and modern UI
+- Error boundaries & fallback UI
+- 404 Not Found page
+
+---
+
+## 🚀 Tech Stack
+
+- **React** (with Hooks)
+- **Redux Toolkit** (with `createSlice`, `createAsyncThunk`)
+- **React Router v6**
+- **Context API** (for theme switching)
+- **Formik** (form state)
+- **Yup** (schema validation)
+- **localStorage** (state persistence)
+- **CSS Modules / Tailwind / Styled-Components** (customize per your choice)
+
+---
+
+
